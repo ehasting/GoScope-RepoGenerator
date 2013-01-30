@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.scopeportal.com/device"
+           xmlns="http://www.scopeportal.com/device"
+           elementFormDefault="qualified">
+    
+    <xs:element name="device">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="base">
+                    <xs:complexType>
+                        <xs:attribute name="id" type="UUID-random" />
+                        <xs:attribute name="author" type="xs:string" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="version">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="release-notes" type="xs:string"/>
+                            <xs:element name="file-set">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="file" type="xs:string" maxOccurs="unbounded" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="number" type="xs:decimal" />
+                        <xs:attribute name="filename" type="xs:string" />
+                        <xs:attribute name="added" type="xs:dateTime" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="displayname" type="xs:string"/>
+                <xs:element name="description" type="xs:string"/>
+                <xs:element name="category" type="xs:string"/>
+                <xs:element name="tags" type="tags-tag" />
+                <xs:element name="site" type="xs:string"/>
+                <xs:element name="media" type="media-tag" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="tags-tag">
+        <xs:sequence>
+            <xs:element name="tag" type="tag-tag" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="tag-tag">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="type" type="xs:string" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="media-tag">
+        <xs:sequence>
+            <xs:element name="file" type="file-tag" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="file-tag">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="type" type="xs:string" />
+                <xs:attribute name="mime" type="xs:string" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+
+    <xs:simpleType name="UUID-random">
+        <xs:restriction base="xs:string">
+            <xs:length value="36" fixed="true" />
+            <xs:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device xmlns="http://www.scopeportal.com/device"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.scopeportal.com/device device.xsd">
+    <base id="8F6476B0-608C-11E2-BCFD-0800200C9A66" author="niceboy"/>
+    <version number="2.3" filename="anotherDevice-1.0.zip" added="2013-01-04T09:02:04">
+        <release-notes>Changed min attack to 0.1ms</release-notes>
+        <file-set>
+                <file>blah.dev</file>
+                <file>blah.pre</file>
+                <file>blah.dll</file>
+        </file-set>
+    </version>
+    <displayname>Another Device 2.0</displayname>
+    <description>Stereo Transient Shaper</description>
+    <category>Effects/Stereo/Dynamics</category>
+    <tags>
+        <tag type="subcategory">Transient Shaper</tag>
+        <tag type="status">Active</tag>
+        <tag type="dsp-requirement">Low</tag>
+    </tags>
+    <site>http://forums.planetz.com/viewtopic.php?f=16&amp;t=28778</site>
+    <media>
+        <file mime="audio/mp3" type="repo-path">anotherdevice/hey.mp3</file>
+        <file mime="image/jpg" type="url">http://www.playboy.com/screenshot.jpg</file>
+        <file mime="application/pdf" type="repo-path">anotherdevice/user-manual.pdf</file>
+    </media>
+</device>

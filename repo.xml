@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<repository>
+    <devices length="2" generation="50d7bc033dd292f672ce8c4c98c13fdbd6160f39d5d9ffc88c0bd8ad71196051">
+        <device>
+            <base id="8F6476B0-608C-11E2-BCFD-0800200C9A66" author="niceboy"></base>
+            <displayname>Another Device</displayname>
+            <description>Mono Transient Shaper</description>
+            <category>Effects/Mono/Dynamics</category>
+            <tags>
+                <tag type="subcategory">Transient Shaper</tag>
+                <tag type="status">Active</tag>
+                <tag type="dsp-requirement">Low</tag>
+            </tags>
+            <site>http://forums.planetz.com/viewtopic.php?f=16&amp;t=28778</site>
+            <media>
+                <file mime="audio/mp3" type="repo-path">anotherdevice/hey.mp3</file>
+                <file mime="image/jpg" type="url">http://www.playboy.com/screenshot.jpg</file>
+                <file mime="application/pdf" type="repo-path">anotherdevice/user-manual.pdf</file>
+            </media>
+            <versions>
+                <version name="1.5" filename="anotherDevice-1.5.zip" added="2012-01-04T09:02:04" hash="md5 or sha1">
+                    <release-notes>Updated GUI</release-notes>
+                </version>
+            </versions>
+        </device>
+        <device>
+            <base id="8F6476B0-608C-11E2-BCFD-0800200C9A67" author="bear"></base>
+            <displayname>Yet Another Device</displayname>
+            <description>Stereo Transient Ditcher</description>
+            <category>Effects/Stereo/Dynamics</category>
+            <tags>
+                <tag type="subcategory">Transient Ditcher</tag>
+                <tag type="status">Inactive</tag>
+                <tag type="dsp-requirement">High</tag>
+            </tags>
+            <site>http://forums.planetz.com/viewtopic.php?f=16&amp;t=28779</site>
+            <media>
+                <file mime="audio/mp3" type="repo-path">anotherdevice/heydude.mp3</file>
+                <file mime="image/jpg" type="url">http://www.playboy.com/screenshot1.jpg</file>
+                <file mime="application/pdf" type="repo-path">anotherdevice/user-manual2.pdf</file>
+            </media>
+            <versions>
+                <version name="1.0" filename="YetAnotherDevice-1.0.zip" added="2013-02-04T09:02:04" hash="md5 or sha1">
+                    <release-notes>Changed min attack to 0.1ms</release-notes>
+                </version>
+            </versions>
+        </device>
+    </devices>
+</repository>
