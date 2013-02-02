@@ -14,7 +14,8 @@ public class RepoModel {
 
     public ArrayList<RepoDeviceModel> devices = new ArrayList<>();
     public String generation = "";
-    public int length = 1;
+    public int length = 0;
+    public String version_build = "1.0";
 
     public boolean checkGeneration(String hash) {
         if (generation.equalsIgnoreCase(generation)) {

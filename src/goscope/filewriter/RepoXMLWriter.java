@@ -38,6 +38,7 @@ public class RepoXMLWriter {
             out.writeStartDocument("utf-8", "1.0");
             out.writeStartElement("repository");
             out.writeStartElement("devices");
+            out.writeAttribute("version", data.version_build);
             out.writeAttribute("length", String.valueOf(data.length));
             out.writeAttribute("generation", XMLTools.CalculateCheckSumString(data.toString()));
             for (Iterator<RepoDeviceModel> it = data.devices.iterator(); it.hasNext();) {
