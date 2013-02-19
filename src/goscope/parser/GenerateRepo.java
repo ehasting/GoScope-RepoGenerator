@@ -35,16 +35,7 @@ public class GenerateRepo {
         }
     }
 
-    private boolean compareFloat(Float number1, Float number2) {
-        int number1i = (int) (number1 * 1000000);
-        int number2i = (int) (number2 * 1000000);
 
-        if (number1i == number2i) {
-            return true;
-        } else {
-            return false;
-        }
-    }
 
     public void addDeviceModel(DeviceModel device, String fileName) {
         this.fileName = fileName;
@@ -64,7 +55,7 @@ public class GenerateRepo {
             boolean newVersion = true;
 
             for (RepoDeviceModel.version ver : repo.devices.get(fondCount).versions) {
-                if (compareFloat(device.versionNumber, ver.versionNumber)) {
+                if (RepoDeviceModel.compareFloat(device.versionNumber, ver.versionNumber)) {
                     newVersion = false;
                     System.out.println("[DEBUG] Device version already in database (" + ver.versionNumber + ")");
                 }

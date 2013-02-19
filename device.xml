@@ -3,16 +3,17 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.scopeportal.com/device device.xsd">
     <base id="8F6476B0-608C-11E2-BCFD-0800200C9A66" author="niceboy"/>
-    <version number="2.3" filename="anotherDevice-1.0.zip" added="2013-01-04T09:02:04">
-        <release-notes>Changed min attack to 0.1ms</release-notes>
+    <version number="2.6" filename="jb            cv.zip" added="2013-01-04T09:02:04">
+        <release-notes>New attack and decay feature</release-notes>
         <file-set>
-                <file>blah.dev</file>
-                <file>blah.pre</file>
-                <file>blah.dll</file>
+            <file>blah.dev</file>
+            <file>blah.pre</file>
+            <file>blah.dll</file>
         </file-set>
     </version>
     <displayname>Another Device 2.0</displayname>
-    <description>Stereo Transient Shaper</description>
+    <description>Stereo Transient Shaper - Dante:  And your design goals for BassSynthi?
+        Roy: After DxSynth and Atze, I wanted to make a compact, easy-to-edit synth device, which nevertheless should have a distinctive sound.  By fiddling around with the Modular Synth, I found a simple way to realize Phase Modulation. Osc1 goes to a Modulation Delay, which delay time is being modulated by Osc2.  The output of both oscillators is summed, passed though envelopes, an LFO, a low pass filter and finally the effects insert and that’s it!</description>
     <category>Effects/Stereo/Dynamics</category>
     <tags>
         <tag type="subcategory">Transient Shaper</tag>
@@ -21,8 +22,9 @@
     </tags>
     <site>http://forums.planetz.com/viewtopic.php?f=16&amp;t=28778</site>
     <media>
-        <file mime="audio/mp3" type="repo-path">anotherdevice/hey.mp3</file>
-        <file mime="image/jpg" type="url">http://www.playboy.com/screenshot.jpg</file>
+        <file mime="audio/mp3" type="repo-path">hey.mp3</file>
+        <file mime="image/jpg" type="url">http://www.scopeportal.com/wp-content/uploads/2012/03/CwMix16-161.jpg</file>
+        <file mime="image/jpg" type="url">http://www.scopeportal.com/wp-content/uploads/2012/03/le-1.jpg</file>
         <file mime="application/pdf" type="repo-path">anotherdevice/user-manual.pdf</file>
     </media>
 </device>

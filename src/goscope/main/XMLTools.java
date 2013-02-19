@@ -146,4 +146,5 @@ public class XMLTools {
         /// DEBUG: System.out.println("SHA-256 (" + input + ") = " + hashCode);
         return hashCode;
     }
+
 }

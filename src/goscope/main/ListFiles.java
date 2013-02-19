@@ -29,4 +29,19 @@ public class ListFiles {
         }
         return _output;
     }
+
+    public static ArrayList<String> recursiveLoadFilenameIntoArray(String directory) {
+        // Directory path here
+        ArrayList<String> _output = new ArrayList<>();
+        File folder = new File(directory);
+        File[] listOfFiles = folder.listFiles();
+        for (File f : listOfFiles) {
+            if (f.isFile()) {
+                _output.add(f.getName());
+            }
+
+        }
+        return _output;
+    }
+
 }
